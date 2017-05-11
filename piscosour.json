@@ -3,5 +3,58 @@
   "analytics" : {
     "id": "UA-99026659-1"
   },
-  "implementations" : {}
+  "implementations" : {
+    "init": {
+      "master": "pisco-gitflow-init@^0.1.3"
+    },
+    "merge": {
+      "master": "pisco-gitflow-merge#^0.1.2",
+      "develop": "pisco-gitflow-merge#^0.1.2",
+      "consolidation": "pisco-gitflow-merge#^0.1.2",
+      "feature": "pisco-gitflow-merge#^0.1.2",
+      "release": "pisco-gitflow-merge#^0.1.2",
+      "hotfix": "pisco-gitflow-merge#^0.1.2",
+      "merger": "pisco-gitflow-merge#^0.1.2"
+    },
+    "setVersion": {
+      "recipe": "pisco-cells-json-setVersion@^0.1.8"
+    },
+    "finish" : {
+      "master" : "pisco-gitflow-finish#^0.1.3",
+      "develop": "pisco-gitflow-finish#^0.1.3",
+      "consolidation": "pisco-gitflow-finish#^0.1.3",
+      "feature": "pisco-gitflow-finish#^0.1.3",
+      "release": "pisco-gitflow-finish#^0.1.3",
+      "hotfix": "pisco-gitflow-finish#^0.1.3",
+      "merger": "pisco-gitflow-finish#^0.1.3"
+    },
+    "start" : {
+      "master" : "pisco-gitflow-start#^0.1.3",
+      "develop": "pisco-gitflow-start#^0.1.3",
+      "consolidation": "pisco-gitflow-start#^0.1.3",
+      "feature": "pisco-gitflow-start#^0.1.3",
+      "release": "pisco-gitflow-start#^0.1.3",
+      "hotfix": "pisco-gitflow-start#^0.1.3",
+      "merger": "pisco-gitflow-start#^0.1.3"
+    },
+    "publish": {
+      "recipe": "pisco-recipe-publish@^0.1.1",
+      "master": "pisco-gitflow-publish@^0.1.0",
+      "develop": "pisco-gitflow-publish@^0.1.0",
+      "consolidation": "pisco-gitflow-publish@^0.1.0",
+      "feature": "pisco-gitflow-publish@^0.1.0",
+      "release": "pisco-gitflow-publish@^0.1.0",
+      "hotfix": "pisco-gitflow-publish@^0.1.0",
+      "merger": "pisco-gitflow-publish@^0.1.0"
+    },
+    "push": {
+      "master": "pisco-gitflow-publish@^0.1.0",
+      "develop": "pisco-gitflow-publish@^0.1.0",
+      "consolidation": "pisco-gitflow-publish@^0.1.0",
+      "feature": "pisco-gitflow-publish@^0.1.0",
+      "release": "pisco-gitflow-publish@^0.1.0",
+      "hotfix": "pisco-gitflow-publish@^0.1.0",
+      "merger": "pisco-gitflow-publish@^0.1.0"
+    }
+  }
 }
