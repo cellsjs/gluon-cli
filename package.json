@@ -1,0 +1,30 @@
+{
+  "name": "gluon-cli",
+  "version": "0.1.0",
+  "description": "Gluon cli: the gitflow and CI tool",
+  "main": "bin/pisco.js",
+  "scripts": {
+    "deps": "npm install"
+  },
+  "keywords": [
+    "piscosour-recipe",
+    "continuous",
+    "integration",
+    "deployment",
+    "CI",
+    "CD"
+  ],
+  "license": "Apache-2.0",
+  "preferGlobal": true,
+  "bin": {
+    "gluon": "bin/pisco.js"
+  },
+  "dependencies": {
+    "piscosour": "^1.1.0",
+    "pisco-gitflow-contexts": "^1.0.0",
+    "pisco-gitflow-flows": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
