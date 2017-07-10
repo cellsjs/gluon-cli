@@ -2,4 +2,5 @@
 
 The CLI of Gluon methodology!
 
- ![Overview of the branch model](docs/images/Gluon.jpg)
+[Go to website](https://cellsjs.github.io/gluon-cli/index.html)
+![Overview of the branch model](docs/images/Gluon.jpg)
