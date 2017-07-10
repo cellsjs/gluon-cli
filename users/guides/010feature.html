@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Working with Features</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="docs">
+      <aside>
+
+        <div class="logoContainer">
+          <a href="../../index.html">
+            <img src="../../images/logo.svg" class="logo" />
+            Gluon
+          </a>
+
+        </div>
+        <ul class="main_menu">
+          
+            
+          
+            
+          
+            
+          
+            
+            <li>
+              <h4>General</h4>
+              
+                
+              
+                
+                  
+                    <a href="../../users/get_started.html">How to install</a>
+                  
+                
+              
+                
+                  
+                    <a href="../../users/get_started010whatis.html">What is gluon?</a>
+                  
+                
+              
+                
+              
+                
+              
+            </li>
+
+            <li>
+              <h4>Tutorials</h4>
+              <ul>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/001versioning.html">Versions between branches</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/002readlogoutput.html">Reading log execution of Gluon</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/003componentlifecycle.html">Component lifecycle using Gluon</a>
+                    
+                  </li>
+                  
+                
+              
+              </ul>
+            </li>
+
+            <li>
+              <h4>Guides</h4>
+              <ul>
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/000init.html">Start working with Gluon!</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/010feature.html" class="selected">Working with Features</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/020release.html">The Release process</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/030hotfix.html">Make a Hotfix</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/040merger.html">Merging master to develop</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/050conflicts.html">Resolving conflicts with git</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/060consolidate.html">Consolidate dependencies of master</a>
+                    
+                  </li>
+                  
+                
+              
+                
+              
+              </ul>
+            </li>
+
+            
+            <li>
+              <h4>API</h4>
+              <h5>FLOWS</h5>
+              <ul>
+                
+                  
+                    
+                      
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/finish.html">finish</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/init.html">init</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/merge.html">merge</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/publish.html">publish</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/start.html">start</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/validate.html">validate</a>
+                          
+                        </li>
+                        
+                      
+                    
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+              <h5>STEPS</h5>
+              <ul>
+                
+                  
+                    
+                      
+                    
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            </li>
+            
+            
+          
+        </ul>
+
+        
+          
+          <a href="../../developers/get_started.html"
+            class="switch_target">
+            Docs for developers
+          </a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </aside>
+      <article>
+        <h1 id="working-with-features-versi-n-en-espa-ol-es-users-guides-010feature-html-">Working with features [<a href="../../../es/users/guides/010feature.html">Versión en español</a>]</h1>
+<h2 id="start-feature-start-new-feature">start:feature - Start new feature</h2>
+<p>Make sure you are in the develop branch</p>
+<pre><code>git checkout develop
+</code></pre><p>Run:</p>
+<pre><code>pisco start [--targetBranch feature --branchName feature/tutorial]
+</code></pre><pre><code class="lang-bash">[14:23:42] Execution contexts: [ recipe, develop ]
+[14:23:42] Starting flow: [ start ], steps: [ start, setVersion, push ]
+...
+</code></pre>
+<p>If targetBranch parameter is not set <strong>Gluon</strong> will ask:</p>
+<pre><code class="lang-bash">? What do you want to start? (Use arrow keys)
+❯ new feature
+  new release
+  new master merger
+</code></pre>
+<p>If branchName parameter is not set, you will be asked for the name you want to give the branch:</p>
+<pre><code>? Write the name of the new feature (feature/ is already appended) tutorial (better without spaces)
+</code></pre><p>Once the execution is finished check that you are in the branch that you just created:</p>
+<pre><code class="lang-bash">➜ pisco-git git: (feature / tutorial) git branch -l
+  Develop
+* Feature / tutorial
+  Master
+</code></pre>
+<h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li>Work on this branch normally with your favorite tools.</li>
+</ol>
+</li>
+<li><ol>
+<li>Is possible to start all the feature branches that you want in parallel.</li>
+</ol>
+</li>
+<li><ol>
+<li>Note that the versions in this branch are <strong>x.y.z-alpha.n</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>Note that a tag of type <strong>pre_x.y.z-alpha.n</strong> has been created with the initial state before starting to work.</li>
+</ol>
+</li>
+</ul>
+<h2 id="finish-feature-code-delivery-from-feature-to-develop">finish:feature - Code delivery from feature to develop</h2>
+<p>Make sure you are on a feature branch</p>
+<pre><code>git checkout feature/tutorial
+</code></pre><p>Run:</p>
+<pre><code>pisco finish
+</code></pre><pre><code>[14:24:52] Execution contexts: [ recipe, feature ]
+[14:24:52] Starting flow: [ finish ], steps: [ merge, validate, setVersion, finish, publish ]
+....
+</code></pre><h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li>Feature branch changes will be delivered to develop.</li>
+</ol>
+</li>
+<li><ol>
+<li>All the tests implemented for the repository will have been executed on the result of the merge of the feature branch with develop. If the tests do not end OK, the process will not continue.</li>
+</ol>
+</li>
+<li><ol>
+<li>Version will have automatically changed in the develop branch from <strong>x.y.z-beta.n</strong> to <strong>x.y.z-beta.(n + 1)</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>Feature branch has been deleted.</li>
+</ol>
+</li>
+<li><ol>
+<li>A tag <strong>x.y.z-beta.(n + 1)</strong> will be generated with the status at the time of delivery.</li>
+</ol>
+</li>
+<li><ol>
+<li>Corresponding artifact has been published in the corresponding registry with the version <strong>x.y.z-beta.(n + 1)</strong></li>
+</ol>
+</li>
+</ul>
+<h3 id="common-problems-">Common Problems:</h3>
+<ul>
+<li><ol>
+<li>In the merge step there are conflicts and the finish execution stops:</li>
+</ol>
+</li>
+</ul>
+<p>[See the section resolving conflicts using the git command line] (#-gitresolve-resolve-conflicts-using-line-of-git-command)</p>
+<ul>
+<li><ol>
+<li>Validate ends with errors. If this happens the process will stop and none of the actions will be carried out.</li>
+</ol>
+</li>
+</ul>
+<p>Solve the tests so they do not give error.</p>
+
+      </article>
+    </section>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      $(function(){
+      	$('.toggle_section').on('click', function(ev) {
+          $(ev.currentTarget).parent('li').toggleClass('open');
+        });
+      });
+
+    </script>
+  </body>
+</html>

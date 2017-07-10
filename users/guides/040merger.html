@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Merging master to develop</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="docs">
+      <aside>
+
+        <div class="logoContainer">
+          <a href="../../index.html">
+            <img src="../../images/logo.svg" class="logo" />
+            Gluon
+          </a>
+
+        </div>
+        <ul class="main_menu">
+          
+            
+          
+            
+          
+            
+          
+            
+            <li>
+              <h4>General</h4>
+              
+                
+              
+                
+                  
+                    <a href="../../users/get_started.html">How to install</a>
+                  
+                
+              
+                
+                  
+                    <a href="../../users/get_started010whatis.html">What is gluon?</a>
+                  
+                
+              
+                
+              
+                
+              
+            </li>
+
+            <li>
+              <h4>Tutorials</h4>
+              <ul>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/001versioning.html">Versions between branches</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/002readlogoutput.html">Reading log execution of Gluon</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/003componentlifecycle.html">Component lifecycle using Gluon</a>
+                    
+                  </li>
+                  
+                
+              
+              </ul>
+            </li>
+
+            <li>
+              <h4>Guides</h4>
+              <ul>
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/000init.html">Start working with Gluon!</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/010feature.html">Working with Features</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/020release.html">The Release process</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/030hotfix.html">Make a Hotfix</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/040merger.html" class="selected">Merging master to develop</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/050conflicts.html">Resolving conflicts with git</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/060consolidate.html">Consolidate dependencies of master</a>
+                    
+                  </li>
+                  
+                
+              
+                
+              
+              </ul>
+            </li>
+
+            
+            <li>
+              <h4>API</h4>
+              <h5>FLOWS</h5>
+              <ul>
+                
+                  
+                    
+                      
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/finish.html">finish</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/init.html">init</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/merge.html">merge</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/publish.html">publish</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/start.html">start</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/validate.html">validate</a>
+                          
+                        </li>
+                        
+                      
+                    
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+              <h5>STEPS</h5>
+              <ul>
+                
+                  
+                    
+                      
+                    
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            </li>
+            
+            
+          
+        </ul>
+
+        
+          
+          <a href="../../developers/get_started.html"
+            class="switch_target">
+            Docs for developers
+          </a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </aside>
+      <article>
+        <h1 id="process-of-merge-changes-from-master-to-develop-versi-n-en-espa-ol-es-users-guides-040merger-html-">Process of merge changes from master to develop [<a href="../../../es/users/guides/040merger.html">Versión en español</a>]</h1>
+<p>There are two cases in the methodology where master changes may not be encountered in developing and causing unintentional loss of code source when a release to master release occurs. (Remember that changes coming from release always replace changes on master).</p>
+<ul>
+<li><ol>
+<li>When problems are corrected on release branch.</li>
+</ol>
+</li>
+<li><ol>
+<li>When problems are corrected on master using a hotfix.</li>
+</ol>
+</li>
+</ul>
+<p>In these two cases it is necessary to merge these changes with develop. This process should always be manual because it is the team&#39;s decision to prioritize this merge or whether it should be done or not. <strong>Gluon</strong> offers a tool to facilitate this process and even be practically automatic if there is no conflict.</p>
+<p>Merging code between master and develop has to be done through a third branch called merger.</p>
+<h2 id="start-merger-starts-merger-branch">start:merger - Starts merger branch</h2>
+<p>Checkout develop branch</p>
+<pre><code>git checkout develop
+</code></pre><p>Run:</p>
+<pre><code>pisco start [--targetBranch merger --branchName merger/tutorial]
+</code></pre><pre><code class="lang-bash">[14:23:42] Execution contexts: [ recipe, develop ]
+[14:23:42] Starting flow: [ start ], steps: [ start, setVersion, push ]
+...
+</code></pre>
+<p>If targetBranch parameter is not set <strong>Gluon</strong> will ask:</p>
+<pre><code class="lang-bash">? What do you want to start? (Use arrow keys)
+  new feature
+  new release
+❯ new master merger
+</code></pre>
+<p>If branchName parameter is not set, you will be asked for the name you want to give the branch:</p>
+<pre><code>? Write the name of the new feature (feature/ is already appended) tutorial (better without spaces)
+</code></pre><p>Once the execution is finished check that you are in the branch that you just created:</p>
+<pre><code class="lang-bash">➜ pisco-git git: (merger/tutorial) git branch -l
+  develop
+* merger / tutorial
+  master
+</code></pre>
+<h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li><strong>IMPORTANT:</strong> Not a branch to work, use this branch only to merge changes with master. (It&#39;s still not dangerous because eventually these changes will go to develop)</li>
+</ol>
+</li>
+<li><ol>
+<li>Do not work with several branches <strong>merger</strong> in parallel. It is possible but it does not make sense.</li>
+</ol>
+</li>
+<li><ol>
+<li>Versions in this branch are <strong>x.y.z-aam.n</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>Note that a tag of type <strong>pre_x.y.z-aam.n</strong> has been created with the initial state before starting to work.</li>
+</ol>
+</li>
+</ul>
+<h2 id="merge-merger-merge-changes-from-master-to-merger-branches">merge:merger - Merge changes from <strong>master</strong> to <strong>merger</strong> branches</h2>
+<p>Merge master to merger branch can be done manually. The tool helps you by running validate at the end of the process.</p>
+<p>Checkout merger branch</p>
+<pre><code>git checkout merger/tutorial
+</code></pre><p>Run:</p>
+<pre><code>pisco merge
+</code></pre><pre><code class="lang-bash">[11:52:14] Execution contexts: [ recipe, merger ]
+[11:52:14] Starting flow: [ merge ], steps: [ merge, validate ]
+...
+</code></pre>
+<p><strong>This command will always fails!!</strong></p>
+<p>Between master and develop will always be a conflict at least:</p>
+<pre><code class="lang-bash">[11:52:17] sipper Flow error (execution stopped) ERROR {cmd: &#39;git&#39;,
+  Args: [ &#39;merge&#39;, &#39;master&#39; ],
+  Options: undefined,
+  Status: &#39;ERROR&#39;,
+  Error: undefined,
+  Output: &#39;Auto-merging package.json \ nCONFLICT (content): Merge conflict in package.json \ nAutomatic merge failed; Fix conflicts and then commit the result. \ N &#39;}
+[11:52:17] Total time - 02 s 567 ms
+</code></pre>
+<p>File containing the version will always conflict. Solve all conflicts using your favorite tools. <strong>VERY IMPORTANT: IS MANDATORY TO MAINTAIN THE MERGER VERSION IN THE VERSION FILE</strong> [see the section resolving conflicts using the git command line] (# gitresolve-resolving-conflicts-using-line-of-command- Git).</p>
+<p>When there is no conflict re-execute the command and the process validate with the execution of all the tests will run.</p>
+<pre><code>pisco merge
+</code></pre><h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li><strong>THE VERSION IN THE VERSION FILE SHOULD BE THE SAME FROM WHICH IT STARTED</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>Changes from master will be delivered to merger branch.</li>
+</ol>
+</li>
+</ul>
+<h2 id="finish-merger-finish-merger-delivery-code-from-merger-to-develop">finish:merger - Finish merger. Delivery code from merger to develop</h2>
+<p>Checkout merger branch</p>
+<pre><code>git checkout merger/tutorial
+</code></pre><p>Run:</p>
+<pre><code>pisco finish
+</code></pre><pre><code>[14:24:52] Execution contexts: [ recipe, merger ]
+[14:24:52] Starting flow: [ finish ], steps: [ merge, validate, setVersion, finish, publish ]
+....
+</code></pre><h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li>Changes from merger branch, and consequently from master, will have been delivered to develop.</li>
+</ol>
+</li>
+<li><ol>
+<li>All tests implemented for the repository will have been executed on the result of the merge of merger branch with develop. If the tests fails, the process will not continue.</li>
+</ol>
+</li>
+<li><ol>
+<li>Version will have automatically changed in develop branch from <strong>x.y.z-beta.n</strong> to <strong>x.y.z-beta.(n+1)</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>Merger branch will be deleted.</li>
+</ol>
+</li>
+<li><ol>
+<li>A tag <strong>x.y.z-beta.(n+1)</strong> will be created with the status at the time of delivery.</li>
+</ol>
+</li>
+<li><ol>
+<li>Corresponding artifact has been published in the corresponding registry with the version <strong>x.y.z-beta.(n+1)</strong></li>
+</ol>
+</li>
+</ul>
+<h3 id="common-problems-">Common Problems:</h3>
+<ul>
+<li><ol>
+<li>In the merge step there are conflicts and the finish execution stops:</li>
+</ol>
+</li>
+</ul>
+<p>[See the section resolving conflicts using the git command line] (#-gitresolve-resolve-conflicts-using-line-of-git-command)</p>
+<ul>
+<li><ol>
+<li>Validate ends with errors. If this happens the process will stop and none of the actions will be carried out.</li>
+</ol>
+</li>
+</ul>
+<p>Solve the tests so they do not give error.</p>
+
+      </article>
+    </section>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      $(function(){
+      	$('.toggle_section').on('click', function(ev) {
+          $(ev.currentTarget).parent('li').toggleClass('open');
+        });
+      });
+
+    </script>
+  </body>
+</html>

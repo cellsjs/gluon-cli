@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Make a Hotfix</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="docs">
+      <aside>
+
+        <div class="logoContainer">
+          <a href="../../index.html">
+            <img src="../../images/logo.svg" class="logo" />
+            Gluon
+          </a>
+
+        </div>
+        <ul class="main_menu">
+          
+            
+          
+            
+          
+            
+          
+            
+            <li>
+              <h4>General</h4>
+              
+                
+              
+                
+                  
+                    <a href="../../users/get_started.html">How to install</a>
+                  
+                
+              
+                
+                  
+                    <a href="../../users/get_started010whatis.html">What is gluon?</a>
+                  
+                
+              
+                
+              
+                
+              
+            </li>
+
+            <li>
+              <h4>Tutorials</h4>
+              <ul>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/001versioning.html">Versions between branches</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/002readlogoutput.html">Reading log execution of Gluon</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/tutorials/003componentlifecycle.html">Component lifecycle using Gluon</a>
+                    
+                  </li>
+                  
+                
+              
+              </ul>
+            </li>
+
+            <li>
+              <h4>Guides</h4>
+              <ul>
+              
+                
+              
+                
+              
+                
+              
+                
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/000init.html">Start working with Gluon!</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/010feature.html">Working with Features</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/020release.html">The Release process</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/030hotfix.html" class="selected">Make a Hotfix</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/040merger.html">Merging master to develop</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/050conflicts.html">Resolving conflicts with git</a>
+                    
+                  </li>
+                  
+                  <li>
+                    
+                    <a href="../../users/guides/060consolidate.html">Consolidate dependencies of master</a>
+                    
+                  </li>
+                  
+                
+              
+                
+              
+              </ul>
+            </li>
+
+            
+            <li>
+              <h4>API</h4>
+              <h5>FLOWS</h5>
+              <ul>
+                
+                  
+                    
+                      
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/finish.html">finish</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/init.html">init</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/merge.html">merge</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/publish.html">publish</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/start.html">start</a>
+                          
+                        </li>
+                        
+                        <li>
+                          
+                          <a href="../../users/documents/flows/validate.html">validate</a>
+                          
+                        </li>
+                        
+                      
+                    
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+              <h5>STEPS</h5>
+              <ul>
+                
+                  
+                    
+                      
+                    
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            </li>
+            
+            
+          
+        </ul>
+
+        
+          
+          <a href="../../developers/get_started.html"
+            class="switch_target">
+            Docs for developers
+          </a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </aside>
+      <article>
+        <h1 id="how-to-make-a-hotfix-versi-n-en-espa-ol-es-users-guides-010hotfix-html-">How to make a Hotfix? [<a href="../../../es/users/guides/010hotfix.html">Versión en español</a>]</h1>
+<p>In order to do a hotfix in master it is necessary to create a hotfix branch to never destabilize master.</p>
+<h2 id="start-hotfix-starting-hotfix-branch">start:hotfix - Starting hotfix branch</h2>
+<p>checkout master</p>
+<pre><code>git checkout master
+</code></pre><p>Run:</p>
+<pre><code>pisco start [--branchName hotfix/tutorial]
+</code></pre><pre><code class="lang-bash">[14:23:42] Execution contexts: [ recipe, master ]
+[14:23:42] Starting flow: [ start ], steps: [ start, setVersion, push ]
+...
+</code></pre>
+<p>It is not necessary to enter targetBranch parameter because from the master branch, the only branch that can be started is hotfix.</p>
+<p>If branchName parameter is not set, you will be asked for the name you want to give the branch:</p>
+<pre><code>? Write the name of the new hotfix (hotfix/ is already appended) tutorial (best without spaces)
+</code></pre><p>Once the execution is finished check that you are in the branch that you just created:</p>
+<pre><code class="lang-bash">➜ pisco-git git: (hotfix / tutorial) git branch -l
+  develop
+* hotfix / tutorial
+  master
+</code></pre>
+<h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li>Work on this branch normally with your favorite tools.</li>
+</ol>
+</li>
+<li><ol>
+<li>Is possible to start all the feature branches that you want in parallel. But, honestly, it is not recommended.</li>
+</ol>
+</li>
+<li><ol>
+<li>Versions in this branch are this way <strong>x.y.z-hotfix.n</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>Note that a tag of type <strong>pre_x.y.z-hotfix.n</strong> has been created with the initial state before starting to work.</li>
+</ol>
+</li>
+</ul>
+<h2 id="finish-hotfix-delivery-code-from-hotfix-to-master">finish:hotfix - Delivery code from hotfix to master</h2>
+<p>Checkout hotfix branch</p>
+<pre><code>git checkout hotfix/tutorial
+</code></pre><p>Run:</p>
+<pre><code>pisco finish
+</code></pre><pre><code class="lang-bash">[14:24:52] Execution contexts: [ recipe, hotfix ]
+[14:24:52] Starting flow: [ finish ], steps: [ merge, validate, setVersion, finish, publish ]
+....
+</code></pre>
+<h3 id="conclusions-">Conclusions:</h3>
+<ul>
+<li><ol>
+<li><strong>IMPORTANT:</strong> Changes from hotfix branch can be manually merge to develop. <strong>Gluon</strong> will help you with this process: [see section Master-to-Develop Mix Mixing Process] (#Process-of-merging-from-master-to-develop)</li>
+</ol>
+</li>
+<li><ol>
+<li>Changes in hotfix branch will be delivered to master.</li>
+</ol>
+</li>
+<li><ol>
+<li>All tests implemented for the repository will have been executed on the result of the merge of the hotfix branch with master. If any test fails, the process will not continue.</li>
+</ol>
+</li>
+<li><ol>
+<li>Hotfix branch has been deleted.</li>
+</ol>
+</li>
+<li><ol>
+<li>Version in the master branch will change from <strong>x.y.z</strong> to <strong>x.y.z-n</strong></li>
+</ol>
+</li>
+<li><ol>
+<li>A tag <strong>x.y.z-n</strong> will be created with the status at the time of delivery.</li>
+</ol>
+</li>
+<li><ol>
+<li>Corresponding artifact has been published in the corresponding registry with version <strong>x.y.z-n</strong></li>
+</ol>
+</li>
+</ul>
+<h3 id="common-problems-">Common Problems:</h3>
+<ul>
+<li><ol>
+<li>In the merge step there are conflicts and the finish execution stops:</li>
+</ol>
+</li>
+</ul>
+<p>[See the section resolving conflicts using the git command line] (#-gitresolve-resolve-conflicts-using-line-of-git-command)</p>
+<ul>
+<li><ol>
+<li>Validate ends with errors. If this happens the process will stop and none of the actions will be carried out.</li>
+</ol>
+</li>
+</ul>
+<p>Solve the tests so they do not give error.</p>
+
+      </article>
+    </section>
+    <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      $(function(){
+      	$('.toggle_section').on('click', function(ev) {
+          $(ev.currentTarget).parent('li').toggleClass('open');
+        });
+      });
+
+    </script>
+  </body>
+</html>
