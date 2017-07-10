@@ -26,12 +26,8 @@
             
           
             
-          
-            
             <li>
               <h4>General</h4>
-              
-                
               
                 
                   
@@ -54,8 +50,6 @@
             <li>
               <h4>Tutorials</h4>
               <ul>
-              
-                
               
                 
               
@@ -91,8 +85,6 @@
             <li>
               <h4>Guides</h4>
               <ul>
-              
-                
               
                 
               
@@ -156,50 +148,6 @@
               <ul>
                 
                   
-                    
-                      
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/finish.html">finish</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/init.html">init</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/merge.html">merge</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/publish.html">publish</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/start.html">start</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/validate.html">validate</a>
-                          
-                        </li>
-                        
-                      
-                    
-                  
-                
-                  
                 
                   
                 
@@ -210,12 +158,6 @@
               </ul>
               <h5>STEPS</h5>
               <ul>
-                
-                  
-                    
-                      
-                    
-                  
                 
                   
                 
@@ -234,13 +176,6 @@
 
         
           
-          <a href="../../developers/get_started.html"
-            class="switch_target">
-            Docs for developers
-          </a>
-          
-        
-          
         
           
         
@@ -254,7 +189,7 @@
 <p>checkout master</p>
 <pre><code>git checkout master
 </code></pre><p>Run:</p>
-<pre><code>pisco start [--branchName hotfix/tutorial]
+<pre><code>cells start [--branchName hotfix/tutorial]
 </code></pre><pre><code class="lang-bash">[14:23:42] Execution contexts: [ recipe, master ]
 [14:23:42] Starting flow: [ start ], steps: [ start, setVersion, push ]
 ...
@@ -291,7 +226,7 @@
 <p>Checkout hotfix branch</p>
 <pre><code>git checkout hotfix/tutorial
 </code></pre><p>Run:</p>
-<pre><code>pisco finish
+<pre><code>cells finish
 </code></pre><pre><code class="lang-bash">[14:24:52] Execution contexts: [ recipe, hotfix ]
 [14:24:52] Starting flow: [ finish ], steps: [ merge, validate, setVersion, finish, publish ]
 ....

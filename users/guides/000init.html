@@ -26,12 +26,8 @@
             
           
             
-          
-            
             <li>
               <h4>General</h4>
-              
-                
               
                 
                   
@@ -54,8 +50,6 @@
             <li>
               <h4>Tutorials</h4>
               <ul>
-              
-                
               
                 
               
@@ -91,8 +85,6 @@
             <li>
               <h4>Guides</h4>
               <ul>
-              
-                
               
                 
               
@@ -156,50 +148,6 @@
               <ul>
                 
                   
-                    
-                      
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/finish.html">finish</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/init.html">init</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/merge.html">merge</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/publish.html">publish</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/start.html">start</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/validate.html">validate</a>
-                          
-                        </li>
-                        
-                      
-                    
-                  
-                
-                  
                 
                   
                 
@@ -210,12 +158,6 @@
               </ul>
               <h5>STEPS</h5>
               <ul>
-                
-                  
-                    
-                      
-                    
-                  
                 
                   
                 
@@ -234,13 +176,6 @@
 
         
           
-          <a href="../../developers/get_started.html"
-            class="switch_target">
-            Docs for developers
-          </a>
-          
-        
-          
         
           
         
@@ -250,14 +185,14 @@
       <article>
         <h1 id="start-working-with-gluon-versi-n-en-espa-ol-es-users-guides-000init-html-">Start working with <strong>Gluon</strong> [<a href="../../../es/users/guides/000init.html">Versión en español</a>]</h1>
 <p>First is necessary to create or configure develop. Execute</p>
-<pre><code>pisco master:init
+<pre><code>cells master:init
 </code></pre><p>The tool will ask for the type of the next release in order to set the next right version.</p>
 <pre><code class="lang-bash">? Choose next release change (Use arrow keys)
   major
   minor
 ❯ patch
 </code></pre>
-<p><strong>IMPORTANT:</strong> During the development process is possible to change the type of release executing <strong>pisco master:init</strong> on master anytime as you wish if is necessary.</p>
+<p><strong>IMPORTANT:</strong> During the development process is possible to change the type of release executing <strong>cells master:init</strong> on master anytime as you wish if is necessary.</p>
 <p>Check that new branch was generated ok:</p>
 <pre><code class="lang-bash">➜  pisco-git git:(master) git branch --all
   develop

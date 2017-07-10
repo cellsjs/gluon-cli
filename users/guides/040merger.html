@@ -26,12 +26,8 @@
             
           
             
-          
-            
             <li>
               <h4>General</h4>
-              
-                
               
                 
                   
@@ -54,8 +50,6 @@
             <li>
               <h4>Tutorials</h4>
               <ul>
-              
-                
               
                 
               
@@ -91,8 +85,6 @@
             <li>
               <h4>Guides</h4>
               <ul>
-              
-                
               
                 
               
@@ -156,50 +148,6 @@
               <ul>
                 
                   
-                    
-                      
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/finish.html">finish</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/init.html">init</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/merge.html">merge</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/publish.html">publish</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/start.html">start</a>
-                          
-                        </li>
-                        
-                        <li>
-                          
-                          <a href="../../users/documents/flows/validate.html">validate</a>
-                          
-                        </li>
-                        
-                      
-                    
-                  
-                
-                  
                 
                   
                 
@@ -210,12 +158,6 @@
               </ul>
               <h5>STEPS</h5>
               <ul>
-                
-                  
-                    
-                      
-                    
-                  
                 
                   
                 
@@ -232,13 +174,6 @@
           
         </ul>
 
-        
-          
-          <a href="../../developers/get_started.html"
-            class="switch_target">
-            Docs for developers
-          </a>
-          
         
           
         
@@ -266,7 +201,7 @@
 <p>Checkout develop branch</p>
 <pre><code>git checkout develop
 </code></pre><p>Run:</p>
-<pre><code>pisco start [--targetBranch merger --branchName merger/tutorial]
+<pre><code>cells start [--targetBranch merger --branchName merger/tutorial]
 </code></pre><pre><code class="lang-bash">[14:23:42] Execution contexts: [ recipe, develop ]
 [14:23:42] Starting flow: [ start ], steps: [ start, setVersion, push ]
 ...
@@ -309,7 +244,7 @@
 <p>Checkout merger branch</p>
 <pre><code>git checkout merger/tutorial
 </code></pre><p>Run:</p>
-<pre><code>pisco merge
+<pre><code>cells merge
 </code></pre><pre><code class="lang-bash">[11:52:14] Execution contexts: [ recipe, merger ]
 [11:52:14] Starting flow: [ merge ], steps: [ merge, validate ]
 ...
@@ -326,7 +261,7 @@
 </code></pre>
 <p>File containing the version will always conflict. Solve all conflicts using your favorite tools. <strong>VERY IMPORTANT: IS MANDATORY TO MAINTAIN THE MERGER VERSION IN THE VERSION FILE</strong> [see the section resolving conflicts using the git command line] (# gitresolve-resolving-conflicts-using-line-of-command- Git).</p>
 <p>When there is no conflict re-execute the command and the process validate with the execution of all the tests will run.</p>
-<pre><code>pisco merge
+<pre><code>cells merge
 </code></pre><h3 id="conclusions-">Conclusions:</h3>
 <ul>
 <li><ol>
@@ -342,7 +277,7 @@
 <p>Checkout merger branch</p>
 <pre><code>git checkout merger/tutorial
 </code></pre><p>Run:</p>
-<pre><code>pisco finish
+<pre><code>cells finish
 </code></pre><pre><code>[14:24:52] Execution contexts: [ recipe, merger ]
 [14:24:52] Starting flow: [ finish ], steps: [ merge, validate, setVersion, finish, publish ]
 ....
