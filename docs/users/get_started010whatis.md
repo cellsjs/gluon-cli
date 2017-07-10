@@ -21,4 +21,4 @@ These tasks are:
  - **finish**: Finish a **Gluon** branch
  - **merge**: Merge **master** changes into **develop**.
 
- ![Overview of the branch model](../images/Gluon.jpg)
+<iframe src="https://docs.google.com/presentation/d/1KFIvjSqKuSgoYIAbgM6_jAI5YPSqvThVwpKTFfMU_CM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
