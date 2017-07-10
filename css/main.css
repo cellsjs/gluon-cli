@@ -222,7 +222,7 @@ a {
 }
 
 .main-content {
-	background-color: #4285F4;
+	background-color: #74b328;
 	color: #FFF;
   display: flex;
   align-items: center;
@@ -253,7 +253,7 @@ a {
 	.action-button {
 		display: block;
 		text-decoration: none;
-		color: #4285F4;
+		color: #74b328;
 		border: 2px solid currentColor;
 		border-radius: 5px;
 		font-size: 18px;
@@ -264,7 +264,7 @@ a {
 	}
 
 	.action-button:hover {
-		background-color: #4285F4;
+		background-color: #74b328;
 		color: #FFF;
 	}
 
@@ -293,11 +293,11 @@ a {
   left: 0;
   width: 440px;
   height: 40%;
-	background: -webkit-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #4285F4 100%);
-  background: -moz-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #4285F4 100%);
-  background: -o-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #4285F4 100%);
-  background: -ms-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #4285F4 100%);
-  background: linear-gradient(to bottom, rgba(252,252,252,0) 0%, #FFF 50%, #4285F4 100%);
+	background: -webkit-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #74b328 100%);
+  background: -moz-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #74b328 100%);
+  background: -o-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #74b328 100%);
+  background: -ms-linear-gradient(top, rgba(252,252,252,0) 0%, #FFF 50%, #74b328 100%);
+  background: linear-gradient(to bottom, rgba(252,252,252,0) 0%, #FFF 50%, #74b328 100%);
 }
 
 	.terminal_header {
@@ -335,7 +335,7 @@ a {
   .why .benefict {
     flex-grow: 1;
     text-align: center;
-    color: #4285F4;
+    color: #74b328;
     width: 33%;
 		font-size: 18px;
   }
@@ -343,7 +343,7 @@ a {
   .why .benefict i {
     margin: 0 auto;
     margin-bottom: 20px;
-    background-color: #4285F4;
+    background-color: #74b328;
     color: #FFF;
     border-radius: 50%;
     padding: 15px 10px;
@@ -370,7 +370,7 @@ a {
 
 	.docs aside .logoContainer{
 		text-align: center;
-		background-color: #4285F4;
+		background-color: #74b328;
 		height: inherit;
 		line-height: inherit;
 		padding: 30px 0;
@@ -404,7 +404,7 @@ a {
 		.docs aside .main_menu > li.open {
 			background-color: #FFF;
 			position: relative;
-			color: #4285F4;
+			color: #74b328;
 			border-bottom: 1px solid #ddd;
 		}
 
@@ -435,13 +435,13 @@ a {
 				padding: 10px 0 10px 30px;
 			}
 			.docs aside .main_menu > li a:hover {
-				color: #4285F4;
+				color: #74b328;
 				margin-left: 5px;
 			}
 
 			.docs aside .main_menu > li a.selected {
 				font-weight: bold;
-				color: #4285F4;
+				color: #74b328;
 				background-color: #FFF;
 				position: relative;
 			}
@@ -475,7 +475,7 @@ a {
     .docs article img {
       display: block;
       margin: 40px auto;
-      border: 1px solid #4285F4;
+      border: 1px solid #74b328;
       border-radius: 3px;
       padding: 5px;
     }
@@ -506,7 +506,7 @@ a {
 
 	.docs h1 {
 		font-size: 25px;
-		color: #4285F4;
+		color: #74b328;
 		border-bottom: 1px solid #ddd;
 		padding-bottom: 15px;
 		margin-bottom: 40px;
