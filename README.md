@@ -2,4 +2,4 @@
 
 The CLI of Gluon methodology!
 
- ![Overview of the branch model](../images/Gluon.jpg)
+ ![Overview of the branch model](docs/images/Gluon.jpg)
