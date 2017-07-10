@@ -1,13 +1,13 @@
 ---
-title: Component lifecycle using Pisco GitFlow
+title: Component lifecycle using Gluon
 layout: doc_page.html
 ---
 
-# Using **Pisco GitFlow** in component development lifecycle
+# Using **Gluon** in component development lifecycle
 
 We are going to see a very simple example with the component (Cells) context, but consider this example could be use for all the contexts you can imagine.
 
-## Start working with Pisco GitFlow
+## Start working with Gluon
 
 Go to the root of your component and execute
 
@@ -32,7 +32,7 @@ Your branch is up-to-date with 'origin/develop'.
 [10:42:09] git checkout develop executed: OK
 ```
 
-**Pisco GitFlow** will check if develop exists, if not it will be created. Anyway **Pisco GitFlow** will check version file in order to set proper version related to master.
+**Gluon** will check if develop exists, if not it will be created. Anyway **Gluon** will check version file in order to set proper version related to master.
 
 The tool will ask for the next release version.
 

@@ -1,5 +1,5 @@
 ---
-toolName: Pisco GitFlow
+toolName: Gluon
 claim: Release Managment Automation With Piscosour
 npmName: pisco-gitflow-contexts
 layout: index.html

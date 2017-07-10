@@ -21,7 +21,7 @@ Run:
 ...
 ```
 
-If targetBranch parameter is not set **Pisco GitFlow** will ask:
+If targetBranch parameter is not set **Gluon** will ask:
 
 ```bash
 ? What do you want to start? (Use arrow keys)

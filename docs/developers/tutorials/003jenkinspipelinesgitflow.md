@@ -1,5 +1,5 @@
 ---
-title: Continuous Integration with Pisco GitFlow
+title: Continuous Integration with Gluon
 layout: doc_page.html
 ---
 

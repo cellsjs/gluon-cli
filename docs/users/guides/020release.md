@@ -23,7 +23,7 @@ Run:
 ...
 ```
 
-If targetBranch parameter is not set **Pisco GitFlow** will ask:
+If targetBranch parameter is not set **Gluon** will ask:
 
 ```bash
 ? What do you want to start? (Use arrow keys)
@@ -38,7 +38,7 @@ If branchName parameter is not set, you will be asked for the name you want to g
 ? Write the name of the new release (release/ is already appended) tutorial (better without spaces)
 ```
 
-The creation of a release branch will change the version of the develop branch. To perform this process **Pisco GitFlow** will ask you to choose next release type, to be able to establish the appropriate version.
+The creation of a release branch will change the version of the develop branch. To perform this process **Gluon** will ask you to choose next release type, to be able to establish the appropriate version.
 
 ```bash
 ? Choose next release (Use arrow keys)
@@ -86,7 +86,7 @@ Run:
 ### Conclusions:
 
 - 1. **IMPORTANT: IN CASE OF CONFLICT BY MERGING CODE HAS PREFERENCE CODE COMING FROM RELEASE**
-- 2. **IMPORTANT:** Changes made in the release branch, while the process has lasted, must be manually merged into develop. **Pisco GitFlow** will help you in this process: [see section Master-to-Develop Mix Mixing Process] (#Process-of-merging-from-master-to-develop)
+- 2. **IMPORTANT:** Changes made in the release branch, while the process has lasted, must be manually merged into develop. **Gluon** will help you in this process: [see section Master-to-Develop Mix Mixing Process] (#Process-of-merging-from-master-to-develop)
 - 3. The changes of the **develop** branch and those made in **release** will have been delivered to **master**.
 - 4. All the tests implemented for the repository will have been executed on the result of the merge of release branch with master. If the tests do not end **OK**, the process will not continue.
 - 5. The version will have automatically changed in the master branch depending on the release version from **x.y.z-rc.0** to **x.y.z** in master. The change in the release branch is determined by the response to the question that was asked in the previous release. (major/minor/patch).

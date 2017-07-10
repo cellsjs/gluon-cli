@@ -20,7 +20,7 @@ Nightly build versions has append the timestamp when the version was created:
 
     x.y.z-beta.n.20170213105634
 
-## How version change with all the **Pisco GitFlow** processes:
+## How version change with all the **Gluon** processes:
 
 ### Feature processes
 
@@ -29,7 +29,7 @@ Nightly build versions has append the timestamp when the version was created:
 | start feature | develop | x.y.z-beta.n | pre_x.y.z-alpha.n | feature | x.y.z-alpha.n |
 | finish feature | feature | x.y.z-alpha.m | x.y.z-beta.n | develop | x.y.z-beta.(n+1) |
 
-Is possible to start multiple features at the same time. All the features branches has to have different **n*+ numbers. **Pisco GitFlow** will create several pre_ versions in order to persist the last version that was created.
+Is possible to start multiple features at the same time. All the features branches has to have different **n*+ numbers. **Gluon** will create several pre_ versions in order to persist the last version that was created.
 
 Lets play with this...
 

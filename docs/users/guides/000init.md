@@ -1,9 +1,9 @@
 ---
-title: Start working with Pisco GitFlow!
+title: Start working with Gluon!
 layout: doc_page.html
 ---
 
-# Start working with **Pisco GitFlow** [[Versión en español](../../../es/users/guides/000init.html)]
+# Start working with **Gluon** [[Versión en español](../../../es/users/guides/000init.html)]
 
 First is necessary to create or configure develop. Execute
 
@@ -34,6 +34,6 @@ Checkout develop to start to work.
 
     git checkout develop
 
-**Do not push code to develop. Create new feature **Pisco GitFlow** branch with start feature command.**
+**Do not push code to develop. Create new feature **Gluon** branch with start feature command.**
 
 Versions of this branch are this type: **x.y.z-beta.n**

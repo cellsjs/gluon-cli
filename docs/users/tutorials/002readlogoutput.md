@@ -1,9 +1,9 @@
 ---
-title: Reading log execution of Pisco GitFlow
+title: Reading log execution of Gluon
 layout: doc_page.html
 ---
 
-# Reading log execution of Pisco GitFlow
+# Reading log execution of Gluon
 
 Is incredible but all the letters that come up very fast when you execute any command means something!!. let's see!
 

@@ -10,7 +10,7 @@ There are two cases in the methodology where master changes may not be encounter
 - 1. When problems are corrected on release branch.
 - 2. When problems are corrected on master using a hotfix.
 
-In these two cases it is necessary to merge these changes with develop. This process should always be manual because it is the team's decision to prioritize this merge or whether it should be done or not. **Pisco GitFlow** offers a tool to facilitate this process and even be practically automatic if there is no conflict.
+In these two cases it is necessary to merge these changes with develop. This process should always be manual because it is the team's decision to prioritize this merge or whether it should be done or not. **Gluon** offers a tool to facilitate this process and even be practically automatic if there is no conflict.
 
 Merging code between master and develop has to be done through a third branch called merger.
 
@@ -30,7 +30,7 @@ Run:
 ...
 ```
 
-If targetBranch parameter is not set **Pisco GitFlow** will ask:
+If targetBranch parameter is not set **Gluon** will ask:
 
 ```bash
 ? What do you want to start? (Use arrow keys)

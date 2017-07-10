@@ -2,19 +2,16 @@
 title: How to install
 layout: doc_page.html
 ---
+# Installation
 
-# How to install
+Gluon-cli is integrated on Cells-cli so installing cells-cli you also install gluon-cli.
 
-Install piscosour.
+## How to install cells-cli
 
-    npm i -g piscosour
+    npm i -g cells-cli
 
-Install all the commands and contexts of **Pisco GitFlow**.
+## How to install gluon-cli
 
-    npm i -g pisco-gitflow-contexts
+    npm i -g gluon-cli
 
-If cells contexts and commands are required is necesary to install this module.
 
-    npm i -g pisco-cells-contexts
-
-[Versión en español](../../es/users/get_started.html)

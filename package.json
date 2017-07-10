@@ -22,7 +22,8 @@
   "dependencies": {
     "piscosour": "^1.1.0",
     "pisco-gitflow-contexts": "^1.0.0",
-    "pisco-gitflow-flows": "^1.0.0"
+    "pisco-gitflow-flows": "^1.0.0",
+    "pisco-site-template-basic": "*"
   },
   "engines": {
     "node": ">=4.0.0"

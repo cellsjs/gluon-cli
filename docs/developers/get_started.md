@@ -1,5 +1,5 @@
 ---
-title: Pisco GitFlow Methology
+title: Gluon Methology
 layout: doc_page.html
 ---
 

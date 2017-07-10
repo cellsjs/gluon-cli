@@ -65,7 +65,7 @@ Run:
 
 ### Conclusions:
 
-- 1. **IMPORTANT:** Changes from hotfix branch can be manually merge to develop. **Pisco gitflow** will help you with this process: [see section Master-to-Develop Mix Mixing Process] (#Process-of-merging-from-master-to-develop)
+- 1. **IMPORTANT:** Changes from hotfix branch can be manually merge to develop. **Gluon** will help you with this process: [see section Master-to-Develop Mix Mixing Process] (#Process-of-merging-from-master-to-develop)
 - 2. Changes in hotfix branch will be delivered to master.
 - 3. All tests implemented for the repository will have been executed on the result of the merge of the hotfix branch with master. If any test fails, the process will not continue.
 - 4. Hotfix branch has been deleted.
