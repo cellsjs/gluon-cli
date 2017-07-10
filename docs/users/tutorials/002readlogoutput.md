@@ -8,7 +8,7 @@ layout: doc_page.html
 Is incredible but all the letters that come up very fast when you execute any command means something!!. let's see!
 
 ```bash
-➜  cells-icons git:(develop) pisco start
+➜  cells-icons git:(develop) cells start
 [16:55:33] Execution contexts: [ develop, component ]
 [16:55:35] Starting flow: [ start ], steps: [ start, setVersion, push ]
 [16:55:36]

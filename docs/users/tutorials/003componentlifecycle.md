@@ -11,7 +11,7 @@ We are going to see a very simple example with the component (Cells) context, bu
 
 Go to the root of your component and execute
 
-    pisco init
+    cells init
 
 If develop not exists will prompt this
 
@@ -45,4 +45,4 @@ The tool will ask for the next release version.
 
 If everything is Ok develop will be created with patch version inside version file.
 
-**IMPORTANT**: Is possible to change new release at any time by executing again pisco init.
+**IMPORTANT**: Is possible to change new release at any time by executing again cells init.

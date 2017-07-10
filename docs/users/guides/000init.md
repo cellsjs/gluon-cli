@@ -7,7 +7,7 @@ layout: doc_page.html
 
 First is necessary to create or configure develop. Execute
 
-    pisco master:init
+    cells master:init
 
 The tool will ask for the type of the next release in order to set the next right version.
 
@@ -18,7 +18,7 @@ The tool will ask for the type of the next release in order to set the next righ
 ❯ patch
 ```
 
-**IMPORTANT:** During the development process is possible to change the type of release executing **pisco master:init** on master anytime as you wish if is necessary.
+**IMPORTANT:** During the development process is possible to change the type of release executing **cells master:init** on master anytime as you wish if is necessary.
 
 Check that new branch was generated ok:
 

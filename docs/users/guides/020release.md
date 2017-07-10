@@ -15,7 +15,7 @@ Checkout develop branch:
 
 Run:
 
-    pisco start [ --targetBranch release --branchName release/tutorial ]
+    cells start [ --targetBranch release --branchName release/tutorial ]
 
 ```bash
 [14:23:42] Execution contexts: [ recipe, develop ]
@@ -75,7 +75,7 @@ checkout release:
 
 Run:
 
-    pisco finish
+    cells finish
 
 ```
 [14:24:52] Execution contexts: [ recipe, release ]

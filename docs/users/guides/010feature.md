@@ -13,7 +13,7 @@ Make sure you are in the develop branch
 
 Run:
 
-    pisco start [--targetBranch feature --branchName feature/tutorial]
+    cells start [--targetBranch feature --branchName feature/tutorial]
 
 ```bash
 [14:23:42] Execution contexts: [ recipe, develop ]
@@ -60,7 +60,7 @@ Make sure you are on a feature branch
 
 Run:
 
-    pisco finish
+    cells finish
 
 ```
 [14:24:52] Execution contexts: [ recipe, feature ]

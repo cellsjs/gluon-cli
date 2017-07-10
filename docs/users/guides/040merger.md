@@ -22,7 +22,7 @@ Checkout develop branch
 
 Run:
 
-    pisco start [--targetBranch merger --branchName merger/tutorial]
+    cells start [--targetBranch merger --branchName merger/tutorial]
 
 ```bash
 [14:23:42] Execution contexts: [ recipe, develop ]
@@ -71,7 +71,7 @@ Checkout merger branch
 
 Run:
 
-    pisco merge
+    cells merge
 
 ```bash
 [11:52:14] Execution contexts: [ recipe, merger ]
@@ -97,7 +97,7 @@ File containing the version will always conflict. Solve all conflicts using your
 
 When there is no conflict re-execute the command and the process validate with the execution of all the tests will run.
 
-    pisco merge
+    cells merge
 
 ### Conclusions:
 
@@ -112,7 +112,7 @@ Checkout merger branch
 
 Run:
 
-    pisco finish
+    cells finish
 
 ```
 [14:24:52] Execution contexts: [ recipe, merger ]

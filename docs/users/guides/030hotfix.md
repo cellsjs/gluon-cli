@@ -15,7 +15,7 @@ checkout master
 
 Run:
 
-    pisco start [--branchName hotfix/tutorial]
+    cells start [--branchName hotfix/tutorial]
 
 ```bash
 [14:23:42] Execution contexts: [ recipe, master ]
@@ -55,7 +55,7 @@ Checkout hotfix branch
 
 Run:
 
-    pisco finish
+    cells finish
 
 ```bash
 [14:24:52] Execution contexts: [ recipe, hotfix ]

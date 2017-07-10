@@ -35,7 +35,7 @@ This flow do this steps:
 - 6. if there is not any update do not do anything finish with NOT BUILT state.
 
 ```
-➜  cells-icons git:(master) pisco consolidate
+➜  cells-icons git:(master) cells consolidate
 [17:18:42] Execution contexts: [ master, component ]
 [17:18:42] Starting flow: [ consolidate ], steps: [ start, finish ]
 [17:18:42] Starting flow: [ start ], steps: [ start, setVersion, push ]
