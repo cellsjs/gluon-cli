@@ -17,7 +17,7 @@
       "merger": "pisco-gitflow-merge#^0.1.2"
     },
     "setVersion": {
-      "recipe": "pisco-cells-json-setVersion@^0.1.8"
+      "recipe": "pisco-cells-setVersion@^1.0.0"
     },
     "finish" : {
       "master" : "pisco-gitflow-finish#^0.1.3",
