@@ -3,7 +3,7 @@ title: Make a Hotfix
 layout: doc_page.html
 ---
 
-# How to make a Hotfix? [[Versión en español](../../../es/users/guides/010hotfix.html)]
+# How to make a Hotfix?
 
 In order to do a hotfix in master it is necessary to create a hotfix branch to never destabilize master.
 

@@ -3,7 +3,7 @@ title: Start working with Gluon!
 layout: doc_page.html
 ---
 
-# Start working with **Gluon** [[Versión en español](../../../es/users/guides/000init.html)]
+# Start working with **Gluon**
 
 First is necessary to create or configure develop. Execute
 
