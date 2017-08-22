@@ -1,6 +1,6 @@
 {
   "name": "gluon-cli",
-  "version": "0.1.8-beta.2",
+  "version": "0.1.9-beta.0",
   "description": "Gluon cli: the gitflow and CI tool",
   "main": "bin/pisco.js",
   "scripts": {
