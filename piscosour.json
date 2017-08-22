@@ -4,6 +4,22 @@
     "id": "UA-99026659-1"
   },
   "implementations" : {
+    "resolve-deps": {
+      "recipe" : "not-build",
+      "documentation" : "not-build"
+    },
+    "build": {
+      "recipe" : "not-build",
+      "documentation" : "not-build"
+    },
+    "deploy": {
+      "recipe" : "not-build",
+      "documentation" : "not-build"
+    },
+    "package": {
+      "recipe" : "not-build",
+      "documentation" : "not-build"
+    },
     "init": {
       "master": "pisco-gitflow-init@^0.1.3"
     },
@@ -45,7 +61,8 @@
       "feature": "pisco-gitflow-publish@^0.1.0",
       "release": "pisco-gitflow-publish@^0.1.0",
       "hotfix": "pisco-gitflow-publish@^0.1.0",
-      "merger": "pisco-gitflow-publish@^0.1.0"
+      "merger": "pisco-gitflow-publish@^0.1.0",
+      "documentation" : "not-build"
     },
     "push": {
       "master": "pisco-gitflow-publish@^0.1.0",
